@@ -23,6 +23,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+from __future__ import absolute_import
 from binascii import a2b_hex, b2a_hex
 from datetime import datetime
 from socket import socket, timeout, AF_INET, SOCK_STREAM
@@ -35,6 +36,7 @@ import time
 import collections, itertools
 import logging
 import threading
+from six.moves import range
 try:
     from ssl import wrap_socket, SSLError
 except ImportError:
